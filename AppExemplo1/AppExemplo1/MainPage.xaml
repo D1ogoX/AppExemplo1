@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppExemplo1.MainPage">
+
+    <StackLayout BackgroundColor="WhiteSmoke">
+        <Grid VerticalOptions="FillAndExpand"
+              HorizontalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height=".5*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <StackLayout HorizontalOptions="FillAndExpand"
+                         VerticalOptions="FillAndExpand"
+                         BackgroundColor="#2e65e6">
+
+                <Frame HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="StartAndExpand"
+                       HeightRequest="150"
+                       WidthRequest="150"
+                       BorderColor="#004cff"
+                       CornerRadius="100"
+                       Padding="0"
+                       HasShadow="True">
+
+                    <Image Source="steve.png"
+                           VerticalOptions="FillAndExpand"
+                           HorizontalOptions="FillAndExpand"
+                           Aspect="Fill"></Image>
+                    
+                </Frame>
+
+                <Label Text="BEM-VINDO DE VOLTA, D1ogoX"
+                       VerticalOptions="StartAndExpand"
+                       HorizontalOptions="CenterAndExpand"
+                       TextColor="#fdbc02"
+                       FontSize="36"
+                       FontFamily="Minecraft"></Label>
+                
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="FillAndExpand"
+                         VerticalOptions="FillAndExpand"
+                         Grid.Row="1"
+                         Padding="0,20,0,0">
+
+                <Grid VerticalOptions="FillAndExpand"
+                      HorizontalOptions="FillAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height=".01*"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height=".01*"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height=".2*"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width=".3*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width=".3*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label FontFamily="Minecraft"
+                           Text="Username:"
+                           TextColor="Black"
+                           Grid.Column="1"
+                           FontSize="Title"/>
+
+                    <Frame Grid.Column="1"
+                           Grid.Row="1"
+                           CornerRadius="50">
+
+                        <Entry Text="D1ogoX"
+                               TextColor="#fdbc02"
+                               IsReadOnly="True"/>
+                    </Frame>
+                    
+                    <Label FontFamily="Minecraft"
+                           Text="Password:"
+                           TextColor="Black"
+                           Grid.Column="1"
+                           Grid.Row="3"
+                           FontSize="Title"/>
+
+                    <Frame Grid.Column="1"
+                           Grid.Row="4"
+                           CornerRadius="50">
+
+                        <Entry Placeholder="Introduza a sua password..."
+                               PlaceholderColor="#fdbc02"/>
+                    </Frame>
+
+                    <Button Text="Login"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Row="6"
+                            Grid.Column="1"
+                            BackgroundColor="Green"
+                            Font="Minecraft"
+                            FontSize="Title"/>
+                    
+                    <Label FontFamily="Minecraft"
+                           Text="Esta conta não é sua?"
+                           TextColor="Black"
+                           Grid.Column="1"
+                           Grid.Row="8"
+                           FontSize="Title"/>
+
+                    <Button Text="Clique aqui"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Row="9"
+                            Grid.Column="1"
+                            BackgroundColor="Red"
+                            Font="Minecraft"
+                            FontSize="Title"/>
+                </Grid>
+                
+            </StackLayout>
+            
+        </Grid>
+    </StackLayout>
+</ContentPage>
